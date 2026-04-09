@@ -9,9 +9,14 @@ RUN apt-get update \
          gcc \
          g++ \
          libkrb5-dev \
+         curl \
+         docker.io \
   && apt-get autoremove -yqq --purge \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
+
+# Ajouter l'utilisateur airflow au groupe docker
+RUN usermod -aG docker airflow
 
 # Retour à l'utilisateur airflow pour installer les paquets Python
 USER airflow

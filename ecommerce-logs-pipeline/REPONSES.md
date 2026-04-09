@@ -58,3 +58,29 @@ Pas de lecture partielle de bloc en cours d'écriture
 Le bloc est considéré comme "committed" seulement après la réplication complète sur tous les DataNodes
 
 Utilisation des leases (baux) : un seul client peut écrire sur un fichier à la fois]
+
+------------------------------------------------------------------------------------------------------
+## Captures d’écran 
+------------------------------------------------------------------------------------------------------
+
+1. docker compose ps montrant tous les conteneurs en état running ou healthy
+![alt text](image1_docker_containers.png)
+
+2. docker exec namenode hdfs dfsadmin -report montrant 1 DataNode Live
+![alt text](image2_datanode.png)
+
+3. Interface Web HDFS (http://localhost:9870) — onglet Browse Directory avec
+/data/ecommerce/logs/raw/
+![alt text](image3_raw_logs.png)
+
+4. Airflow UI — Vue Graph du DAG logs_ecommerce_dag avec les 8 tâches
+![alt text](image4_graph.png)
+
+5. Airflow UI — Exécution complète avec les 2 branches visibles (une verte, une grisée)
+![alt text](image5_graph.png)
+
+6. Logs de la tâche analyser_logs_hdfs montrant le résumé des status codes et le Top 5 URLs
+![alt text](image6_archiver_logs_hdfs.png)
+
+7. Interface Web HDFS — fichier déplacé dans /data/ecommerce/logs/processed/ après exécution
+![alt text](image7_processed_logs.png)
