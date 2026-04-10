@@ -1,0 +1,13 @@
+executor: KubernetesExecutor
+
+config:
+  core:
+    load_examples: false
+
+logs:
+  persistence:
+    enabled: true
+
+dags:
+  persistence:
+    enabled: true
