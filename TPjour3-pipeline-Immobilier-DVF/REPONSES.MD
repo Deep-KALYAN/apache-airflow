@@ -1,3 +1,27 @@
+------------------------------------------------------------------------------------------------------
+# Captures d’écran 
+------------------------------------------------------------------------------------------------------
+
+## Capture 1 : Airflow UI - Vue Graph
+
+![alt text](Capture/Capture_1_Airflow_UI_VueGraph.png)
+
+## Capture 2 : Airflow UI - Vue Grid (ou Tree)
+
+![alt text](Capture/Capture_2_Airflow_UI_VueGrid.png)
+
+## Capture 3 : HDFS NameNode
+
+![alt text](Capture/Capture_3_HDFS_NameNode.png)
+
+## Capture 4 : PostgreSQL - Données insérées
+
+![alt text](Capture/Capture_4_PostgreSQL_Données_insérées.png)
+
+## Capture 5 : Logs du DAG
+
+![alt text](Capture/Capture_5_Logs_du_DAG.png)
+
 markdown
 # RESPONSES.md - Documentation des problèmes et solutions
 
@@ -295,10 +319,4 @@ EOF
 ls -la *.md
 
 
-# Captures d'ecran
 
-![alt text](<Capture 1 Airflow UI Vue Graph.png>)
-![alt text](<Capture 2 Airflow UI  Vue Grid.png>)
-![alt text](<Capture 3 HDFS NameNode.png>)
-![alt text](<Capture 4 PostgreSQL Données insérées.png>)
-![alt text](<Capture 5 Logs du DAG.png>)
